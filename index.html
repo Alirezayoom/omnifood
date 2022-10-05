@@ -13,6 +13,7 @@
     />
     <link href="css/general.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/queries.css" rel="stylesheet" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -23,19 +24,24 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header class="nav-open">
       <a href="#">
         <img class="logo" src="img/omnifood-logo.png" alt="logo" />
       </a>
       <nav class="header-nav">
         <ul class="nav-list">
-          <li><a class="nav-link" href="#">section 1</a></li>
-          <li><a class="nav-link" href="#">section 2</a></li>
-          <li><a class="nav-link" href="#">section 3</a></li>
-          <li><a class="nav-link" href="#">section 4</a></li>
-          <li><a class="nav-link nav-cta" href="#">section 5</a></li>
+          <li><a class="nav-link" href="#">How it works</a></li>
+          <li><a class="nav-link" href="#">Meals</a></li>
+          <li><a class="nav-link" href="#">Testimonials</a></li>
+          <li><a class="nav-link" href="#">Pricing</a></li>
+          <li><a class="nav-link nav-cta" href="#">Try for free</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="section-hero">
@@ -207,7 +213,7 @@
             <div class="meal-content">
               <span class="meal-tag tag-vegan">Vegan</span>
               <span class="meal-tag tag-paleo">Paleo</span>
-              <p class="meal-title">Japanese Geyozas</p>
+              <p class="meal-title">Avocado Salad</p>
               <ul class="meal-attributes">
                 <li class="meal-attribute">
                   <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
@@ -557,16 +563,28 @@
     </main>
 
     <footer class="footer">
-      <div class="container grid grid-cols-5">
+      <div class="container">
         <div class="logo-col">
           <a href="#">
             <img class="logo" src="img/omnifood-logo.png" alt="logo" />
           </a>
 
           <ul>
-            <li><a href="#"><ion-icons name="logo-instagram"></ion-icons></a></li>
-            <li><a href="#"><ion-icons name="logo-facebook"></ion-icons></a></li>
-            <li><a href="#"><ion-icons name="logo-twitter"></ion-icons></a></li>
+            <li>
+              <a href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
           </ul>
 
           <p class="copyright">
@@ -577,9 +595,8 @@
           <p class="footer-heading">Contact us</p>
           <address class="contacts">
             <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
-              <a href="tel415-201-6370:">415-201-6370</a><br/>
-              <a href="mailto:hello@omnifood.com">hello@omnifood.com</a>
-            </p>
+            <a href="tel415-201-6370:">415-201-6370</a><br />
+            <a href="mailto:hello@omnifood.com">hello@omnifood.com</a>
           </address>
         </div>
         <nav class="nav-col">
