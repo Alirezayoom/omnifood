@@ -173,4 +173,62 @@
   .logo-col {
     grid-column: span 3;
   }
+  .section-cta {
+    padding: 3.6rem;
+  }
+}
+
+/*************************/
+/* BELOW 544px for phones */
+/*************************/
+@media (max-width: 34em) {
+  .grid-cols-2,
+  .grid-cols-3,
+  .grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+  .btn {
+    padding: 2.4rem 1.6rem;
+  }
+  .hero-img {
+    width: 80%;
+  }
+  .logos img {
+    height: 1.2rem;
+  }
+  .img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .img-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .img-box {
+    transform: translateY(2.4rem);
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+  .section-cta {
+    padding: 2.4rem;
+  }
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
 }
