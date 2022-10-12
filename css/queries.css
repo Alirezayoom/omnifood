@@ -96,6 +96,7 @@
   }
   .btn-mobile-nav {
     display: block;
+    z-index: 999;
   }
   .header-nav {
     background: rgba(255, 255, 255, 0.9);
@@ -105,24 +106,24 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    transform: translateX(100%);
 
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateX(100%);
     transition: all 0.5s ease-in;
 
     /* Hide navigation */
     opacity: 0;
 
     pointer-events: none;
-
     visibility: hidden;
   }
   .nav-open .header-nav {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
+    transform: translateX(0%);
   }
   .nav-list {
     flex-direction: column;
